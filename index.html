@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+
+    <body class="bg-black text-white">
+        <!-- Navbar -->
+        <header class="px-6 md:px-10 py-6 2xl:mx-10">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="./src/Assets/logo.png" alt="Logo" class="h-12 md:h-20" />
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 text-base lg:text-lg">
+                    <a href="#" class="hover:text-red-500">About</a>
+                    <a href="#" class="hover:text-red-500">Service</a>
+                    <a href="#" class="hover:text-red-500">Album</a>
+                    <a href="#" class="hover:text-red-500">Stories</a>
+                    <a href="#" class="hover:text-red-500">Blog</a>
+                </nav>
+
+                <!-- Contact Button (Desktop) -->
+                <button
+                    class="hidden md:inline-block bg-white text-red-600 font-semibold px-4 py-1 rounded-full hover:bg-red-100 text-sm md:text-base">
+                    Contact Us
+                </button>
+
+                <!-- Hamburger Icon (Mobile) -->
+                <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="#" class="block text-white hover:text-red-500">About</a>
+                <a href="#" class="block text-white hover:text-red-500">Service</a>
+                <a href="#" class="block text-white hover:text-red-500">Album</a>
+                <a href="#" class="block text-white hover:text-red-500">Stories</a>
+                <a href="#" class="block text-white hover:text-red-500">Blog</a>
+                <button class="bg-white text-red-600 font-semibold px-4 py-1 rounded-full hover:bg-red-100 text-sm">
+                    Contact Us
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="px-4 md:px-16 mt-10 md:mt-10 2xl:mx-24">
+            <!-- Hero Image Gallery -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-10">
+                <img src="/src/Assets/hero 1.jpg" alt="Image 1" class="w-full aspect-square object-cover opacity-50" />
+                <img src="/src/Assets/gallary 2.jpg" alt="Image 2"
+                    class="w-full aspect-square object-cover opacity-50" />
+                <img src="/src/Assets/hero 5.png" alt="Image 3" class="w-full aspect-square object-cover opacity-50" />
+                <img src="/src/Assets/hero 4.png" alt="Image 4" class="w-full aspect-square object-cover opacity-50" />
+                <img src="/src/Assets/hero 3.png" alt="Image 5" class="w-full aspect-square object-cover opacity-50" />
+            </div>
+
+            <!-- Heading -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl 2xl:text-8xl font-bold text-center mb-6">
+                Tala Prattoy
+            </h1>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <button
+                    class="text-red-600 bg-white px-6 py-2 rounded-full hover:bg-red-700 hover:text-white transition-all font-bold">
+                    Art Walkthrough
+                </button>
+                <button
+                    class="border border-red-600 text-white px-6 py-2 rounded-full hover:bg-red-600 hover:text-white transition-all font-semibold">
+                    Priviledged Entry
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="bg-black text-white px-6 md:px-16 py-12 pt-20">
+            <div class="max-w-8xl mx-auto 2xl:mx-20">
+
+                <!-- Heading -->
+                <div class="mb-8">
+
+                </div>
+
+                <!-- Flex Layout: Paragraph + Image -->
+                <div class="flex flex-col md:flex-row gap-6 items-stretch">
+
+                    <!-- Paragraph Block -->
+                    <div class="md:w-1/2 flex items-center">
+                        <div class="flex flex-col">
+                            <h2 class="text-3xl md:text-4xl font-semibold">
+                                About <span class="font-bold">Tala</span>
+                            </h2>
+
+                            <p class="text-base md:text-lg leading-relaxed text-gray-300 mt-5">
+                                Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining
+                                the tools and methods of art and art installations interpreting the formative stages
+                                of the festival. Tala Prattoy’s work emphasis has always been on Durga Puja as a
+                                specific art genre where the public space is being transformed into an art venue.
+                                We are committed to make that art global. Tala Prattoy upholds the art aspects of
+                                Durga Puja. Essence of creativity combining the tools and methods of art and art
+                                installations interpreting the formative stages of the festival. Tala Prattoy’s
+                                work emphasis has always been on Durga Puja as a specific art genre where the
+                                public space is being transformed into an art venue. We are committed to make that
+                                art global.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Image Block -->
+                    <div class="md:w-1/2">
+                        <img src="./src/Assets/about image 1.avif" alt="Art 1"
+                            class="rounded-lg w-full h-full object-cover " />
+                    </div>
+                </div>
+
+                <!-- Grid Images -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+                    <img src="./src/Assets/about image 2.jpg" alt="Art 2" class="rounded-lg w-full object-cover" />
+                    <img src="./src/Assets/about image3.jpg" alt="Art 3" class="rounded-lg w-full object-cover" />
+                </div>
+            </div>
+        </section>
+        <section class="bg-black text-white px-6 md:px-16 py-12 mt-20">
+            <div class="max-w-7xl mx-auto space-y-12">
+
+                <!-- Video + Text Section -->
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <!-- Video Image with Play Button -->
+                    <div class="relative w-full md:w-1/2">
+                        <img src="/src/Assets/discover.jpg" alt="Video"
+                            class="w-full rounded-lg object-cover h-64 md:h-80">
+                        <div class="absolute inset-0 flex justify-center items-center">
+                            <img src="/src/Assets/Group vector.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Discover Tala Text -->
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Discover <span class="font-bold">Tala</span>
+                        </h2>
+                        <p class="text-sm md:text-base text-gray-300 leading-relaxed">
+                            Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the
+                            tools and methods
+                            of art and art installations interpreting the formative stages of the festival. Tala
+                            Prattoy’s work emphasis
+                            has always been on Durga Puja as a specific art genre where the public space is being
+                            transformed into
+                            an art venue. We are committed to make that art global.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class=" py-12 px-4 md:px-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
+                        <!-- Left Section -->
+                        <div>
+                            <h2 class="text-white text-4xl font-light">
+                                Lorem <span class="font-bold">Ipsum</span>
+                            </h2>
+                            <p class="text-gray-300 mt-4 text-sm leading-relaxed max-w-md">
+                                Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining
+                                the tools and methods of art and art installations interpreting the formative stages
+                                of the festival.
+                            </p>
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="grid grid-cols-2 gap-y-6 gap-x-8">
+                            <!-- Item 1 -->
+                            <div class="flex items-center gap-2">
+                                <p class="text-red-600 text-xl font-bold whitespace-nowrap">500K+</p>
+                                <p class="text-white text-sm">Existing Partnerships</p>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="flex items-center gap-2">
+                                <p class="text-red-600 text-xl font-bold whitespace-nowrap">5M</p>
+                                <p class="text-white text-sm">Existing Partnerships</p>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="flex items-center gap-2">
+                                <p class="text-red-600 text-xl font-bold whitespace-nowrap">100K+</p>
+                                <p class="text-white text-sm">Existing Partnerships</p>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="flex items-center gap-2">
+                                <p class="text-red-600 text-xl font-bold whitespace-nowrap">5M</p>
+                                <p class="text-white text-sm">Award Winning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="px-4 py-16 max-w-7xl mx-auto">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Objective <span class="text-white font-extrabold">&</span> <span
+                        class="text-white font-extrabold">features</span>
+                </h2>
+                <p class="mt-4 text-gray-300 max-w-xl mx-auto">
+                    Learning provides the environment and inspiration to create and exhibit that brings people together
+                    to build connections in community.
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="space-y-3">
+                    <img src="./src/Assets/features1.jpg" alt="Durga Puja Art"
+                        class="w-full h-56 object-cover rounded" />
+                    <h3 class="text-red-600 text-lg font-semibold">Durga Puja Art 2024</h3>
+                    <p class="text-gray-400 text-sm">
+                        Tala Prattoy, endeavoring towards global art fervor, projects this year’s Durga Puja Art on
+                        celebrating the journey of a Durga Puja Artist. It also highlights Kolkata - narration by
+                        Sovanik Paul, the Artist of high repute.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="space-y-3">
+                    <img src="./src/Assets/features2.jpg" alt="Watch Art" class="w-full h-56 object-cover rounded" />
+                    <h3 class="text-red-600 text-lg font-semibold">Watch Art with Artist</h3>
+                    <p class="text-gray-400 text-sm">
+                        2024 introduces a new extension to the guided walkthrough to Tala Prattoy Durga Puja Art where
+                        visitors can now share one-to-one immersive thoughts through a walk-in schedule with the Artist
+                        himself. This program is chargeable and the visitors have to buy tickets for booking the slot at
+                        different times.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="space-y-3">
+                    <img src="./src/Assets/features3.jpg" alt="Craftsmanship"
+                        class="w-full h-56 object-cover rounded" />
+                    <h3 class="text-red-600 text-lg font-semibold">Encouraging Craftsmanship</h3>
+                    <p class="text-gray-400 text-sm">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="space-y-3">
+                    <img src="./src/Assets/features4.jpg" alt="Installation Art"
+                        class="w-full h-56 object-cover rounded" />
+                    <h3 class="text-red-600 text-lg font-semibold">Promotion of Installation Art</h3>
+                    <p class="text-gray-400 text-sm">
+                        Installation Art is an artistic genre of site-specific artworks which are generally
+                        site-specific. It’s new. It is now a generation of versatile artists to emerge.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+
+            <!-- Video/Thumbnail Image with Play Button -->
+            <div class="relative w-full max-h-[600px] overflow-hidden">
+                <img src="/src/Assets/award group 1.png" alt="Award Thumbnail" class="w-full h-auto object-cover" />
+                <div class="absolute inset-0 flex justify-center items-center">
+                    <img src="/src/Assets/Group vector.png" alt="">
+                </div>
+
+            </div>
+
+            <!-- Award Title & Description -->
+            <div class="py-10 px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Award</h2>
+                <p class="text-gray-300 max-w-xl mx-auto">
+                    Learning provides the environment and inspiration to create and exhibit that brings people together
+                    to build connections in community.
+                </p>
+            </div>
+
+            <!-- Logos -->
+            <div class="flex flex-wrap justify-evenly pb-12 px-4">
+                <!-- Repeat for more logos -->
+                <div class="w-20 md:w-24">
+                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                    <p class="text-sm mt-2">massArt</p>
+                </div>
+                <div class="w-20 md:w-24">
+                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                    <p class="text-sm mt-2">massArt</p>
+                </div>
+                <div class="w-20 md:w-24">
+                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                    <p class="text-sm mt-2">massArt</p>
+                </div>
+                <div class="w-20 md:w-24">
+                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                    <p class="text-sm mt-2">massArt</p>
+                </div>
+                <div class="w-20 md:w-24">
+                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                    <p class="text-sm mt-2">massArt</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Gallery Section -->
+        <section class="py-16 px-4 max-w-7xl mx-auto">
+            <!-- Title -->
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Gallery</h2>
+                <p class="text-gray-300 max-w-xl mx-auto">
+                    Learning provides the environment and inspiration to create and exhibit that brings people
+                    together to build connections in community.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-2">
+                <!-- Repeat this block for each image -->
+                <img src="/src/Assets/gallary 1.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 2.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 3.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 4.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 5.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 6.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 7.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+                <img src="/src/Assets/gallary 8.jpg" alt="Gallery Image"
+                    class="w-full h-auto rounded-lg object-cover" />
+
+            </div>
+        </section>
+
+        <section class="px-4 py-16 max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">
+                Tala In <span class="text-red-600">News</span>
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- News Card -->
+                <div class="bg-black">
+                    <img src="./src/Assets/news 1.jpg" alt="News" class="w-full h-auto rounded" />
+                    <h3 class="text-red-600 font-semibold mt-4">Encouraging Craftsmanship</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+
+                <!-- Duplicate above card 5 more times -->
+                <div class="bg-black">
+                    <img src="./src/Assets/news 2.jpg" alt="News" class="w-full h-auto rounded" />
+                    <h3 class="text-red-600 font-semibold mt-4">Encouraging Craftsmanship</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+
+                <div class="bg-black">
+                    <img src="./src/Assets/news 3.jpg" alt="News" class="w-full h-auto rounded" />
+                    <h3 class="text-red-600 font-semibold mt-4">Encouraging Craftsmanship</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+
+                <div class="bg-black">
+                    <img src="./src/Assets/news 4.jpg" alt="News" class="w-full h-auto rounded" />
+                    <h3 class="text-red-600 font-semibold mt-4">Encouraging Craftsmanship</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+
+                <div class="bg-black">
+                    <img src="./src/Assets/news 5.jpg" alt="News" class="w-full h-auto rounded" />
+                    <h3 class="text-red-600 font-semibold mt-4">Encouraging Craftsmanship</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+
+                <div class="bg-black">
+                    <img src="./src/Assets/news 6.jpg" alt="News" class="w-full h-auto rounded" />
+                    <h3 class="text-red-600 font-semibold mt-4">Encouraging Craftsmanship</h3>
+                    <p class="text-sm text-gray-300 mt-2">
+                        Learning provides the environment and inspiration to create and exhibit that brings people
+                        together to build connections in community.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+
+                <!-- Branding & Newsletter -->
+                <div class="md:col-span-2 bg-gray-800 p-10">
+                    <img src="./src/Assets/logo.png" alt="Logo" class="h-12 md:h-20" />
+                    <p class="text-sm mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor vehicula orci, id
+                        tincidunt neque bibendum et.
+                    </p>
+                    <div class="flex items-center bg-white rounded overflow-hidden max-w-xs">
+                        <input type="email" placeholder="Insert your mail here"
+                            class="text-black px-4 py-2 w-full outline-none" />
+                        <button class="bg-red-600 px-4 text-white font-bold">➤</button>
+                    </div>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Show</a></li>
+                        <li><a href="#">Video</a></li>
+                    </ul>
+                </div>
+
+                <!-- Media Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Media Group</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#">News Studio</a></li>
+                        <li><a href="#">News TV</a></li>
+                        <li><a href="#">Mass TV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sitemap / Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📞 +99 876 543 2107</li>
+                        <li>📧 hello@massart.com</li>
+                        <li>📍 4005 Silver business bay, CA</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center text-xs text-gray-500 mt-10 border-t border-gray-800 pt-6">
+                Copyright © 2025 massArt. Designed & Developed Ethically by Ethical Dev.
+            </div>
+        </footer>
+
+
+
+    </body>
+    <script src="script.js"></script>
+</body>
+
+</html>
