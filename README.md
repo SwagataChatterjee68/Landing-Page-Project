@@ -1,1 +1,1 @@
-# Landding Pge Project
+# Landing Page Project
