@@ -12,20 +12,20 @@
 
     <body class="bg-black text-white">
         <!-- Navbar -->
-        <header class="px-6 md:px-10 py-6 2xl:mx-10">
+        <header class="fixed top-0 left-0 w-full z-50 bg-black px-6 md:px-10 py-6 2xl:mx-10 2xl:px-20">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
-                    <img src="./src/Assets/logo.png" alt="Logo" class="h-12 md:h-20" />
+                    <img src="./src/Assets/logo.png" alt="Logo" class="h-12 md:h-10 lg:h-16" />
                 </div>
 
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-6 lg:space-x-8 text-base lg:text-lg">
-                    <a href="#" class="hover:text-red-500">About</a>
-                    <a href="#" class="hover:text-red-500">Service</a>
-                    <a href="#" class="hover:text-red-500">Album</a>
-                    <a href="#" class="hover:text-red-500">Stories</a>
-                    <a href="#" class="hover:text-red-500">Blog</a>
+                    <a href="#about" class="hover:text-red-500">About</a>
+                    <a href="#service" class="hover:text-red-500">Service</a>
+                    <a href="#gallary" class="hover:text-red-500">Album</a>
+                    <a href="#stories" class="hover:text-red-500">Stories</a>
+                    <a href="#blog" class="hover:text-red-500">Blog</a>
                 </nav>
 
                 <!-- Contact Button (Desktop) -->
@@ -46,11 +46,11 @@
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
-                <a href="#" class="block text-white hover:text-red-500">About</a>
-                <a href="#" class="block text-white hover:text-red-500">Service</a>
-                <a href="#" class="block text-white hover:text-red-500">Album</a>
-                <a href="#" class="block text-white hover:text-red-500">Stories</a>
-                <a href="#" class="block text-white hover:text-red-500">Blog</a>
+                <a href="#about" class="block text-white hover:text-red-500">About</a>
+                <a href="#service" class="block text-white hover:text-red-500">Service</a>
+                <a href="#gallary" class="block text-white hover:text-red-500">Album</a>
+                <a href="#stories" class="block text-white hover:text-red-500">Stories</a>
+                <a href="#blog" class="block text-white hover:text-red-500">Blog</a>
                 <button class="bg-white text-red-600 font-semibold px-4 py-1 rounded-full hover:bg-red-100 text-sm">
                     Contact Us
                 </button>
@@ -58,19 +58,28 @@
         </header>
 
         <!-- Hero Section -->
-        <section class="px-4 md:px-16 mt-10 md:mt-10 2xl:mx-24">
+        <section class="px-4 md:px-16 pt-40 md:mt-10 2xl:mx-24">
             <!-- Hero Image Gallery -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-10">
-                <img src="/src/Assets/hero 1.jpg" alt="Image 1" class="w-full aspect-square object-cover opacity-50" />
-                <img src="/src/Assets/gallary 2.jpg" alt="Image 2"
-                    class="w-full aspect-square object-cover opacity-50" />
-                <img src="/src/Assets/hero 5.png" alt="Image 3" class="w-full aspect-square object-cover opacity-50" />
-                <img src="/src/Assets/hero 4.png" alt="Image 4" class="w-full aspect-square object-cover opacity-50" />
-                <img src="/src/Assets/hero 3.png" alt="Image 5" class="w-full aspect-square object-cover opacity-50" />
+            <!-- Scrollable wrapper -->
+            <div class="overflow-x-auto hide-scrollbar">
+                <!-- Image grid inside scrollable container -->
+                <div class="flex gap-3 mb-10 w-max md:grid md:grid-cols-5 md:w-full">
+                    <img src="/src/Assets/hero 1.jpg" alt="Image 1"
+                        class="w-40 md:w-full aspect-square object-cover opacity-50" />
+                    <img src="/src/Assets/gallary 2.jpg" alt="Image 2"
+                        class="w-40 md:w-full aspect-square object-cover opacity-50" />
+                    <img src="/src/Assets/hero 5.png" alt="Image 3"
+                        class="w-40 md:w-full aspect-square object-cover opacity-50" />
+                    <img src="/src/Assets/hero 4.png" alt="Image 4"
+                        class="w-40 md:w-full aspect-square object-cover opacity-50" />
+                    <img src="/src/Assets/hero 3.png" alt="Image 5"
+                        class="w-40 md:w-full aspect-square object-cover opacity-50" />
+                </div>
             </div>
 
+
             <!-- Heading -->
-            <h1 class="text-4xl sm:text-5xl md:text-6xl 2xl:text-8xl font-bold text-center mb-6">
+            <h1 class="text-4xl sm:text-5xl md:text-5xl 2xl:text-8xl font-bold text-center mb-6">
                 Tala Prattoy
             </h1>
 
@@ -88,7 +97,7 @@
         </section>
 
         <!-- About Section -->
-        <section class="bg-black text-white px-6 md:px-16 py-12 pt-20">
+        <section id="about"  class="bg-black text-white px-6 md:px-16 py-12 pt-20 mt-48">
             <div class="max-w-8xl mx-auto 2xl:mx-20">
 
                 <!-- Heading -->
@@ -102,11 +111,11 @@
                     <!-- Paragraph Block -->
                     <div class="md:w-1/2 flex items-center">
                         <div class="flex flex-col">
-                            <h2 class="text-3xl md:text-4xl font-semibold">
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold ">
                                 About <span class="font-bold">Tala</span>
                             </h2>
 
-                            <p class="text-base md:text-lg leading-relaxed text-gray-300 mt-5">
+                            <p class="text-base md:text-xs xl:text-lg leading-relaxed text-gray-300 mt-5">
                                 Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining
                                 the tools and methods of art and art installations interpreting the formative stages
                                 of the festival. Tala Prattoy’s work emphasis has always been on Durga Puja as a
@@ -135,11 +144,11 @@
                 </div>
             </div>
         </section>
-        <section class="bg-black text-white px-6 md:px-16 py-12 mt-20">
+        <section class="bg-black text-white px-6 md:px-16 py-12 mt-20" >
             <div class="max-w-7xl mx-auto space-y-12">
 
                 <!-- Video + Text Section -->
-                <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="flex flex-col md:flex-row gap-32 items-center">
                     <!-- Video Image with Play Button -->
                     <div class="relative w-full md:w-1/2">
                         <img src="/src/Assets/discover.jpg" alt="Video"
@@ -154,13 +163,7 @@
                         <h2 class="text-2xl md:text-3xl font-semibold mb-4">Discover <span class="font-bold">Tala</span>
                         </h2>
                         <p class="text-sm md:text-base text-gray-300 leading-relaxed">
-                            Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the
-                            tools and methods
-                            of art and art installations interpreting the formative stages of the festival. Tala
-                            Prattoy’s work emphasis
-                            has always been on Durga Puja as a specific art genre where the public space is being
-                            transformed into
-                            an art venue. We are committed to make that art global.
+                            Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy’s work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global. Tala Prattoy upholds the art aspects of Durga Puja. Essence of creativity combining the tools and methods of art and art installations interpreting the formative stages of the festival. Tala Prattoy’s work emphasis has always been on Durga Puja as a specific art genre where the public space is being transformed into an art venue. We are committed to make that art global.
                         </p>
                     </div>
                 </div>
@@ -210,7 +213,7 @@
 
             </div>
         </section>
-        <section class="px-4 py-16 max-w-7xl mx-auto">
+        <section class="px-4 py-16 max-w-7xl mx-auto" id="service">
             <!-- Heading -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold">
@@ -294,35 +297,40 @@
             </div>
 
             <!-- Logos -->
-            <div class="flex flex-wrap justify-evenly pb-12 px-4">
-                <!-- Repeat for more logos -->
-                <div class="w-20 md:w-24">
-                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
-                    <p class="text-sm mt-2">massArt</p>
-                </div>
-                <div class="w-20 md:w-24">
-                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
-                    <p class="text-sm mt-2">massArt</p>
-                </div>
-                <div class="w-20 md:w-24">
-                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
-                    <p class="text-sm mt-2">massArt</p>
-                </div>
-                <div class="w-20 md:w-24">
-                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
-                    <p class="text-sm mt-2">massArt</p>
-                </div>
-                <div class="w-20 md:w-24">
-                    <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
-                    <p class="text-sm mt-2">massArt</p>
+            <!-- Scrollable Container -->
+            <!-- Wrapper with scroll and scrollbar hidden -->
+            <div class="overflow-x-auto hide-scrollbar">
+                <div class="flex  md:justify-evenly gap-6 pb-12 px-4 w-max md:w-auto">
+                    <!-- Award Items -->
+                    <div class="w-20 md:w-24 shrink-0 inline-block text-center">
+                        <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                        <p class="text-sm mt-2">massArt</p>
+                    </div>
+                    <div class="w-20 md:w-24 shrink-0 inline-block text-center">
+                        <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                        <p class="text-sm mt-2">massArt</p>
+                    </div>
+                    <div class="w-20 md:w-24 shrink-0 inline-block text-center">
+                        <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                        <p class="text-sm mt-2">massArt</p>
+                    </div>
+                    <div class="w-20 md:w-24 shrink-0 inline-block text-center">
+                        <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                        <p class="text-sm mt-2">massArt</p>
+                    </div>
+                    <div class="w-20 md:w-24 shrink-0 inline-block text-center">
+                        <img src="./src/Assets/award 1.png" alt="massArt" class="mx-auto" />
+                        <p class="text-sm mt-2">massArt</p>
+                    </div>
                 </div>
             </div>
+
 
         </section>
 
 
         <!-- Gallery Section -->
-        <section class="py-16 px-4 max-w-7xl mx-auto">
+        <section class="py-16 px-4 max-w-7xl mx-auto" id="gallary">
             <!-- Title -->
             <div class="text-center mb-10">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Gallery</h2>
@@ -355,9 +363,9 @@
             </div>
         </section>
 
-        <section class="px-4 py-16 max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">
-                Tala In <span class="text-red-600">News</span>
+        <section class="px-4 py-16 max-w-7xl mx-auto" id="stories">
+            <h2 class="text-3xl md:text-4xl mb-10 text-left">
+                Tala In <span class="font-bold">News</span>
             </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -420,7 +428,7 @@
         </section>
 
         <!-- Footer Section -->
-        <footer class="bg-gray-900 text-gray-300 py-12">
+        <footer class="bg-gray-900 text-gray-300 py-12" id="blog">
             <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
 
                 <!-- Branding & Newsletter -->
